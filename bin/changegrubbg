@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#change grub background
+sudo cp /home/kaonashi/.usr-settings/desktop-base/* /usr/share/images/desktop-base/desktop-grub.png;
+sudo cp /home/kaonashi/.usr-settings/desktop-base/* /usr/share/images/desktop-base/kali-grub.png;
+sudo update-grub;

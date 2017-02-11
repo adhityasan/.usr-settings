@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd /mnt/data/linux/app/programming/phpmyadmin/;
+sudo dpkg -i *;
+

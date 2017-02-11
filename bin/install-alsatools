@@ -1,0 +1,6 @@
+#!/bin/bash
+# reinstall-alsa tools && hda jackretask
+
+#install alsa-tools + hda jackretask
+cd /mnt/data/linux/app/system/alsa-tools_jackretask/;
+sudo dpkg -i *;

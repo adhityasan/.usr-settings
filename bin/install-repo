@@ -1,0 +1,10 @@
+#!/bin/bash
+
+sudo cp /home/kaonashi/.usr-settings/text/sources.list /etc/apt/sources.list;
+
+echo " 
+
+ ============ repository has installed ===========
+
+"
+sleep 3s;

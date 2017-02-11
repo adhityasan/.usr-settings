@@ -1,0 +1,7 @@
+#!/bin/bash
+# install-netbeans
+
+#install netbeans
+cd /mnt/data/linux/app/programming/netbeans/;
+sudo chmod +x netbeans-8.2-linux.sh;
+sudo ./netbeans-8.2-linux.sh;

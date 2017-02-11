@@ -1,0 +1,2 @@
+#!/bin/bash
+sudo rsync -av --delete /home/kaonashi/.local/bin/ /backup/.local/bin/;

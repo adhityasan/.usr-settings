@@ -1,0 +1,5 @@
+#!/bin/bash
+#install efibootmanager
+
+cd /mnt/data/linux/app/system/efibootmgr_0.5/;
+sudo dpkg -i *;

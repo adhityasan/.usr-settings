@@ -1,0 +1,7 @@
+#!/bin/bash
+
+cd /mnt/data/linux/app/desktop/thunderbird/;
+tar -xjvf thunderbird-45.5.1.tar.bz2;
+sudo mv thunderbird /opt/thunderbird;
+sudo cp /home/kaonashi/.usr-settings/text/thunderbird.desktop /usr/share/applications;
+

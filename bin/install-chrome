@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd /mnt/data/linux/app/desktop/google-chrome/;
+sudo dpkg -i *;
+

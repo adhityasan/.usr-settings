@@ -1,0 +1,5 @@
+#!/bin/bash
+#install tree
+
+cd /mnt/data/linux/app/system/tree/;
+sudo dpkg -i *;

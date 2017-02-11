@@ -1,0 +1,12 @@
+#!/bin/bash
+
+cd /mnt/data/linux/themes/icons/;
+sudo tar -xzvf mycons.tar.gz --directory /usr/share/icons/;
+
+echo "
+
+ ============== Icons has installed ============= 
+
+";
+sleep 3s;
+

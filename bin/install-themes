@@ -1,0 +1,11 @@
+#!/bin/bash
+
+cd /mnt/data/linux/themes/theme/;
+sudo tar -xzvf mythemes.tar.gz --directory /usr/share/themes/;
+
+echo "
+
+ ============== Themes has Installed ==============
+
+";
+

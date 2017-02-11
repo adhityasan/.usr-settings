@@ -1,0 +1,11 @@
+#!/bin/bash
+# create-mount-point
+
+
+#create file data, win, winfile on /mnt
+sudo mkdir /mnt/{data,win,winfile};
+
+#mount data
+sudo mount /dev/sda6 /mnt/data;
+sudo mount /dev/sda3 /mnt/win;
+sudo mount /dev/sda4 /mnt/winfile;

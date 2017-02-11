@@ -1,0 +1,5 @@
+#!/bin/bash
+# reinstall dpkg repack fakeroot
+
+cd /mnt/data/linux/app/system/dpkgrepack-fakeroot/;
+sudo dpkg -i *;

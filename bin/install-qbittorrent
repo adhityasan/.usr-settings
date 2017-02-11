@@ -1,0 +1,5 @@
+#!/bin/bash
+#install-qbittorrent
+
+cd /mnt/data/linux/app/desktop/qbittorrent/;
+sudo dpkg -i *;

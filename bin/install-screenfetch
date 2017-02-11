@@ -1,0 +1,5 @@
+#!/bin/bash
+#install screenfetch manager
+
+cd /mnt/data/linux/app/system/screenfetch/;
+sudo dpkg -i *;
