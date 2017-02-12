@@ -1,0 +1,64 @@
+#!/bin/bash
+
+cd /mnt/data/linux/themes/theme/;
+sudo tar -xzvf mythemes.tar.gz --directory /usr/share/themes/;
+
+echo "
+
+ ============== Themes has Installed ==============
+
+";
+sleep 3s;
+clear
+
+cd /mnt/data/linux/themes/icons/;
+sudo tar -xzvf mycons.tar.gz --directory /usr/share/icons/;
+
+echo "
+
+ ============== Icons has installed ============= 
+
+";
+sleep 3s;
+clear;
+
+echo " ... Setting Shell themes, GTK, and Icons 
+
+";
+sleep 2s
+
+#set gtk theme
+gsettings set org.gnome.desktop.interface gtk-theme 'OSX-Arc-Shadow';
+#set shell theme
+gsettings set org.gnome.shell.extensions.user-theme name 'Mist-3.20';
+#set icon
+gsettings set org.gnome.desktop.interface icon-theme 'Flat Remix';
+
+echo "
+
+ ======== Shell Themes, GTK+, and Icons has been Set =========
+
+";
+sleep 3s;
+clear;
+
+echo "... Set kaonashi dock settings 
+
+";
+sleep 1s;
+
+#set dock position to bottom
+gsettings set org.gnome.shell.extensions.dash-to-dock dock-position 'BOTTOM';
+
+#set opacity dock true
+gsettings set org.gnome.shell.extensions.dash-to-dock opaque-background true;
+
+#set opcaity scale
+gsettings set org.gnome.shell.extensions.dash-to-dock background-opacity 0;
+
+#turn off animate when showing apps
+gsettings set org.gnome.shell.extensions.dash-to-dock animate-show-apps false;
+
+echo "done...";
+sleep 1s;
+clear;
