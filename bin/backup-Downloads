@@ -1,0 +1,9 @@
+#!/bin/bash
+sudo rsync -av --delete /home/kaonashi/Downloads/ /backup/Downloads/;
+
+echo "
+
+====== Documents has been backed up at /backup/Downloads =======
+
+";
+

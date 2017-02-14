@@ -1,7 +1,5 @@
 #!/bin/bash
 sudo rsync -av --delete /home/kaonashi/Documents/ /backup/Documents/;
-backup.local;
-backup.usr-settings;
 
 echo "
 

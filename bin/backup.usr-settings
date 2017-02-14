@@ -1,2 +1,0 @@
-#!/bin/bash
-sudo rsync -av --delete /home/kaonashi/.usr-settings/ /backup/.usr-settings/;

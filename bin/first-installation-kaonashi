@@ -1,0 +1,53 @@
+#!/bin/bash
+
+#restore backed up files from /backup
+restorebackup;
+echo " ======= Files has been restored from /backup ";
+
+#create mount point to /mnt
+create-mount-point;
+echo " ======= mount point created 
+";
+
+#create all kaonashi's symbolic link
+echo " create kaonashi's  Symbolic link...
+";
+ln -s /home/$USER/Documents/ /home/$USER/Desktop/Documents;
+ln -s /home/$USER/Downloads/ /home/$USER/Desktop/Downloads;
+ln -s /home/$USER/Documents/Cisco\ Academy /home/$USER/Desktop/Documents/Cisco\ Academy;
+ln -s /mnt/data/ /home/$USER/Desktop/Data;
+ln -s /mnt/winfile/ /home/$USER/Desktop/Windows\ File;
+mkdir /home/$USER/Desktop/Link;
+ln -s /mnt/winfile/Downloads/ /home/$USER/Downloads/win.Downloads;
+ln -s /mnt/winfile/Documents/ /home/$USER/Documents/win.Documents;
+ln -s /mnt/winfile/Pictures/ /home/$USER/Pictures/win.Pictures;
+ln -s /mnt/winfile/Videos/ /home/$USER/Videos/win.Videos;
+echo " ======= symbolic link had created 
+";
+
+#set touchpad taptoclick
+gsettings set org.gnome.desktop.peripherals.touchpad tap-to-click true
+
+#set natural scroll touchpad
+gsettings set org.gnome.desktop.peripherals.touchpad natural-scroll true
+
+#set minimizer
+gsettings set org.gnome.desktop.wm.keybindings minimize "['<Super><Alt>Down', '<Super>h']"
+
+#set workspace to down
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-down "['<Super>Page_Down', '<Control><Alt>Down']"
+
+#set Show desktop
+gsettings set org.gnome.desktop.wm.keybindings show-desktop "['<Super>d']"
+
+#nulli-ng 
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "[]"
+
+#nulli-ng
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "[]"
+
+#set switch apps forward
+gsettings set org.gnome.desktop.wm.keybindings switch-applications "['<Control><Alt>Right', '<Alt>Tab']"
+
+#set switch apps backward
+gsettings set org.gnome.desktop.wm.keybindings switch-applications-backward "['<Control><Alt>Left', '<Super>Tab']"
