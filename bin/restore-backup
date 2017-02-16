@@ -1,0 +1,6 @@
+#!/bin/bash
+sudo rsync -av /backup/Documents/ /home/kaonashi/Documents/;
+
+echo '
+ ======= backup files restored ';
+
