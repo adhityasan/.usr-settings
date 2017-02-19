@@ -36,9 +36,9 @@ echo "
 sleep 3s;
 
 #laravel
-dir=laravel/
-from=/var/www/
-sudo rsync -av --delete $from$dir $bck$dir/;
+dir=www/
+from=/var/
+sudo rsync -av --delete $from$dir $bck$dir;
 
 echo "
 
