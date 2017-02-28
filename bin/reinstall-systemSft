@@ -5,54 +5,15 @@ clear;
 
 #install-tree
 install-tree;
-echo ' 
-
-============= Tree has installed =============
-
-';
-sleep 3s;
-clear;
-
 
 #install alsatools
 install-alsatools;
-echo ' 
-
-============= HdaJackRetask has installed ============ 
-
-* set 00d as internal
-* set 00f as back
-* set 010 as LFE
-
-';
-sleep 5s;
-hdajackretask;
-clear;
-
 
 #install dpkg-repack
 install-dpkgrepack;
-echo ' 
-
-============= DPKG-Repack has installed ============== 
-
-';
-sleep 3s;
-clear;
-
 
 #install screenfetch
 install-screenfetch;
-echo ' 
-
-============= Screenfetch has Installed ============== 
-
-';
-screenfetch;
-sleep 3s;
-clear;
-
 
 #change grub resolution GRUB_GFXMODE=1366x768
-sudo cp /home/kaonashi/.usr-settings/text/grub /etc/default/grub;
-
+sudo cp /home/kaonashi/.usr-settings/txt/grub /etc/default/grub;

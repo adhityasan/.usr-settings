@@ -1,4 +1,5 @@
 #!/bin/bash
+message="has been backed up at"
 from=/home/kaonashi/
 bck=/backup/
 
@@ -8,7 +9,7 @@ sudo rsync -av --delete $from$dir $bck$dir;
 
 echo "
 
-====== $dir has been backed up at $bck$dir =======
+====== $dir $message $bck$dir =======
 
 ";
 sleep 3s;
@@ -19,7 +20,7 @@ sudo rsync -av --delete $from$dir $bck$dir;
 
 echo "
 
-====== $dir has been backed up at $bck$dir =======
+====== $dir $message $bck$dir =======
 
 ";
 sleep 3s;
@@ -30,7 +31,7 @@ sudo rsync -av --delete $from$dir $bck$dir;
 
 echo "
 
-====== $dir has been backed up at $bck$dir =======
+====== $dir $message $bck$dir =======
 
 ";
 sleep 3s;
@@ -42,7 +43,17 @@ sudo rsync -av --delete $from$dir $bck$dir;
 
 echo "
 
-====== $dir has been backed up at $bck$dir =======
+====== $dir $message $bck$dir =======
 
 ";
 sleep 3s;
+
+#mysql database
+dir=mysql/
+from=/var/lib/
+sudo rsync -av --delete $from$dir $bck$dir;
+echo "
+
+====== $dir $message $bck$dir =======
+
+";

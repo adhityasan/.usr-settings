@@ -1,11 +1,6 @@
 #!/bin/bash
 # reinstall programming application
 
-echo '
-
-Reinstalling Programming Application...
-
-';
 
 #install jdk
 install-jdk;
@@ -13,11 +8,20 @@ install-jdk;
 #install netbeans
 install-netbeans;
 
-#install lampp
-install-lampp;
+#install atom
+install-atom;
+
+#install pt
+install-pt;
+
+#install workbench
+install-workbench;
 
 #install atom
 install-atom;
 
-# install pt
-install-pt;
+#install phpmyadmin
+install-phpmyadmin;
+
+#install php update for laravel
+install-laravelsupport;

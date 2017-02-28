@@ -1,9 +1,0 @@
-#!/bin/bash
-yon=['Y','y','N','n']
-stdin=''
-read stdin
-if $stdin in $yon:
-  echo "works !"
-else
-  echo "not works !";
-fi
