@@ -1,0 +1,26 @@
+#!/bin/bash
+
+#set available sites and hosts
+sudo cp -r /home/$USER/.usr-settings/sites-available /etc/apache2/;
+sudo cp /home/$USER/.usr-settings/txt/grub /usr/share/grub/default/;
+
+#enabling sites
+sudo service apache2 start
+sudo service apache2 status
+
+#change localhost default
+sudo a2dissite 000-default.conf
+sudo service apache2 reload
+
+sudo a2ensite 000-default.conf
+sudo a2ensite hikejava.com.conf
+sudo a2ensite lganesha.laravel.conf
+sudo a2ensite praxis.me.conf
+
+#reload to activate new settings
+sudo service apache2 reload
+
+echo ""
+echo " ======= local sites and hosts has enables "
+echo ""
+sleep 2s;

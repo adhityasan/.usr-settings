@@ -12,4 +12,3 @@ echo " ======= youtube-dl has installed ======= "
 echo ""
 sleep 2s;
 clear;
-

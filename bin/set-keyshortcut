@@ -14,7 +14,7 @@ $sett/custom1/ binding '<Control><Alt>H';
 
 $sett/custom2/ name 'Root nautilus';
 $sett/custom2/ command 'sudo nautilus /';
-$sett/custom2/ binding '<Control><Alt>N';
+$sett/custom2/ binding '<Control><Alt>R';
 
 $sett/custom3/ name 'Firefox';
 $sett/custom3/ command 'firefox';
