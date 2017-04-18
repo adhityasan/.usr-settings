@@ -1,8 +1,13 @@
 #!/bin/bash
 
 #set available sites and hosts
-sudo cp -r /home/$USER/.usr-settings/sites-available /etc/apache2/;
-sudo cp /home/$USER/.usr-settings/txt/grub /usr/share/grub/default/;
+sudo cp /home/$USER/.usr-settings/sites-available/* /etc/apache2/;
+
+sudo chown kaonashi:kaonashi /var/www/html;
+mkdir /var/www/html/Docotel;
+mkdir /var/www/html/Learn;
+mkdir /var/www/html/Project;
+mkdir /var/www/html/localhost;
 
 #enabling sites
 sudo service apache2 start
@@ -13,14 +18,14 @@ sudo a2dissite 000-default.conf
 sudo service apache2 reload
 
 sudo a2ensite 000-default.conf
-sudo a2ensite hikejava.com.conf
-sudo a2ensite lganesha.laravel.conf
-sudo a2ensite praxis.me.conf
+
 
 #reload to activate new settings
 sudo service apache2 reload
 
 echo ""
-echo " ======= local sites and hosts has enables "
+echo " ======= localhost sites and hosts has enables "
+echo " ======= Other localSite has Set, but not enabled yet "
 echo ""
+ls /etc/apache2/sites-available/;
 sleep 2s;
