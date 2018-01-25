@@ -10,7 +10,7 @@ $sett/custom0/ binding '<Control><Alt>T'
 
 $sett/custom1/ name 'Home';
 $sett/custom1/ command 'nautilus';
-$sett/custom1/ binding '<Super>H';
+$sett/custom1/ binding '<Super>E';
 
 $sett/custom2/ name 'Root nautilus';
 $sett/custom2/ command 'sudo nautilus /';
