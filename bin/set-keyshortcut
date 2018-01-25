@@ -4,13 +4,13 @@ sett="gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybindi
 
 gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom6/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom7/']"
 
-$sett/custom0/ name 'Terminal'
-$sett/custom0/ command 'gnome-terminal'
+$sett/custom0/ name 'Terminator'
+$sett/custom0/ command 'terminator'
 $sett/custom0/ binding '<Control><Alt>T'
 
 $sett/custom1/ name 'Home';
 $sett/custom1/ command 'nautilus';
-$sett/custom1/ binding '<Control><Alt>H';
+$sett/custom1/ binding '<Super>H';
 
 $sett/custom2/ name 'Root nautilus';
 $sett/custom2/ command 'sudo nautilus /';
@@ -28,10 +28,10 @@ $sett/custom5/ name 'Leafpad';
 $sett/custom5/ command 'leafpad';
 $sett/custom5/ binding '<Control><Alt>L';
 
-$sett/custom6/ name 'Rhythmbox';
-$sett/custom6/ command 'rhythmbox';
-$sett/custom6/ binding '<Control><Alt>R';
+$sett/custom6/ name 'Spotify';
+$sett/custom6/ command 'spotify';
+$sett/custom6/ binding '<Control><Alt>S';
 
-$sett/custom7/ name 'Atom';
-$sett/custom7/ command 'atom';
-$sett/custom7/ binding '<Control><Alt>A';
+$sett/custom7/ name 'VS Code';
+$sett/custom7/ command 'code';
+$sett/custom7/ binding '<Control><Alt>C';

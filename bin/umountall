@@ -1,6 +1,0 @@
-#!/bin/bash
-
-sudo umount /dev/sda3;
-sudo umount /dev/sda4;
-sudo umount /dev/sda6;
-

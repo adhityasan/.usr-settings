@@ -1,6 +1,0 @@
-#!/bin/bash
-
-sudo mount /dev/sda3 /mnt/windows/;
-sudo mount /dev/sda4 /mnt/winfile/;
-sudo mount /dev/sda6 /mnt/data/;
-

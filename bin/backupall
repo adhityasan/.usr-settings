@@ -1,6 +1,6 @@
 #!/bin/bash
 message="has been backed up at"
-from=/home/kaonashi/
+from=/home/$USER/
 bck=/backup/
 
 #Documents
