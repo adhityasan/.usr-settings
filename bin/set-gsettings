@@ -61,9 +61,6 @@ gsettings set org.gnome.shell favorite-apps "['firefox-esr.desktop', 'atom.deskt
 gsettings set org.gnome.shell.extensions.EasyScreenCast file-folder /home/$USER/Videos/ScreenCast
 
 
-
-
-
 # Fonts and Scale
 
 #fonts
@@ -107,6 +104,8 @@ gsettings set org.gnome.desktop.wm.keybindings switch-applications "['<Control><
 #set switch apps backward
 gsettings set org.gnome.desktop.wm.keybindings switch-applications-backward "['<Control><Alt>Left', '<Super>Tab']"
 
+#set switch apps on active workspace only
+gsettings set org.gnome.shell.window-switcher current-workspace-only true
 
 
 
