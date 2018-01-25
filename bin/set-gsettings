@@ -37,6 +37,11 @@ gsettings set org.gnome.desktop.screensaver picture-uri /home/$USER/.usr-setting
 #alt-tab view app-icon and thumbnails
 gsettings set org.gnome.shell.window-switcher app-icon-mode both
 
+
+###############################################################################
+# !important , install dash-to-dock extension first, reboot, and then dconf can find these schema 
+###############################################################################
+
 #dock position
 gsettings set org.gnome.shell.extensions.dash-to-dock dock-position 'BOTTOM';
 
