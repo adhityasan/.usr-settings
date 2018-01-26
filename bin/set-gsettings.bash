@@ -99,10 +99,16 @@ gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "[]"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "[]"
 
 #set switch apps forward
-gsettings set org.gnome.desktop.wm.keybindings switch-applications "['<Control><Alt>Right', '<Alt>Tab']"
+gsettings set org.gnome.desktop.wm.keybindings switch-applications "['<Alt>Tab']"
 
 #set switch apps backward
-gsettings set org.gnome.desktop.wm.keybindings switch-applications-backward "['<Control><Alt>Left', '<Super>Tab']"
+gsettings set org.gnome.desktop.wm.keybindings switch-applications-backward "['<Super>Tab']"
+
+#set cycle apps forward
+gsettings set org.gnome.desktop.wm.keybindings cycle-windows "['<Control><Alt>Right']"
+
+#set cycle apps backward
+gsettings set org.gnome.desktop.wm.keybindings cycle-windows-backward "['<Control><Alt>Left']"
 
 #set switch apps on active workspace only
 gsettings set org.gnome.shell.window-switcher current-workspace-only true
